@@ -16,7 +16,6 @@ TOKEN = os.getenv('DISCORD_TOKEN')
 GUILD_ID = int(os.getenv('DISCORD_GUILD'))
 VT_API_KEY = os.getenv('VT_API_KEY')
 
-
 #enabling needed intents
 intents = discord.Intents.all()
 intents.members = True
@@ -25,7 +24,6 @@ intents.messages = True
 class SecureCheck(commands.Bot):
     def __init__(self):
         super().__init__(command_prefix="!", intents=intents)
-        
     
     async def setup_hook(self) -> None:
         guild = discord.Object(id=GUILD_ID)
@@ -33,7 +31,6 @@ class SecureCheck(commands.Bot):
         await self.tree.sync(guild=guild)
     
 bot = SecureCheck()
-
 
 class PageView(discord.ui.View):
     def __init__(self, embeds):
@@ -109,7 +106,6 @@ async def on_message(message):
             await message.channel.send("Please upload the file in the specified format.")
     
     await bot.process_commands(message)
-
 
 @bot.tree.command(name = "upload_file", description = "Upload file for checking")
 async def upload(interaction: discord.Interaction, file: discord.Attachment):

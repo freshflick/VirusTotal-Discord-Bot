@@ -17,6 +17,8 @@ To use, simply invite the bot to your server and use the slash command /upload_f
 - The .env file, which should contain the bot token, guild ID, and VirusTotal API key, is not included.
 - Anyone wishing to use the bot must create their own .env file and add the respective fields.
 
+Note: If you intend to modify, extend, or create a personalized version of this project, please fork this repository first.
+
 ## Screenshots: 
 - File check in-progress:
 

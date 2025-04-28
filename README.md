@@ -11,7 +11,7 @@ A Python-based Discord bot that makes scanning files easy and fast using the Vir
 - Get a direct link to the full VirusTotal analysis for deeper insights, including community comments, file behavior, and technical details.
 
 ## Usage:
-To use, simply invite the bot to your server and use the slash command /upload_file to upload the file for scanning. [TO BE IMPLEMENTED]
+To use, simply invite the bot to your server and use the slash command /upload_file to upload the file for scanning. [Bot Invite - TO BE IMPLEMENTED]
 
 - The file bot.py contains the source code for the bot.
 - The .env file, which should contain the bot token, guild ID, and VirusTotal API key, is not included.
